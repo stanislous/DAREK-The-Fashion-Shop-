@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IProducts } from './products';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-product-list',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
+  imageWidth:number = 30;
+  products:IProducts[];
 
-  constructor() { }
+  constructor(private _dataService: DataService) { 
+    
+   }
 
   ngOnInit() {
+    this.products = this._dataService.getProducts();
   }
 
 }

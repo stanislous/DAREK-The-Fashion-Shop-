@@ -1,5 +1,5 @@
-interface IProducts{
-    "productId": 16,
+export interface IProducts{
+    "productId": number,
     "productName": string;
     "productCode": string;
     "releaseDate": string;
