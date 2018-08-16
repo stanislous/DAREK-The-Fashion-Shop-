@@ -8,7 +8,7 @@ import { DataService } from '../services/data.service';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-  imageWidth:number = 30;
+  imageWidth:number = 10;
   products:IProducts[];
 
   constructor(private _dataService: DataService) { 

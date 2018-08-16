@@ -6,19 +6,15 @@
           <img class="card-img-top" [src]='product.imageUrl' [style.padding.px]='imageWidth' alt="Card image cap">
           <div class="card-body">
               <ul class="list-group list-group-flush">
-                  <li class="list-group-item">{{ product.productId }}</li>
                   <li class="list-group-item">{{ product.productName }}</li>
-                  <li class="list-group-item">{{ product.productCode }}</li>
-                  <li class="list-group-item">{{ product.releaseDate }}</li>
                   <li class="list-group-item">{{ product.price | currency:USD}}</li>
                 </ul>
                 <br>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <button type="button" class="btn btn-sm btn-success">Buy</button>
+                <button type="button" class="btn btn-sm btn-primary">Add to Cart</button>
               </div>
-              
             </div>
           </div>
         </div>
