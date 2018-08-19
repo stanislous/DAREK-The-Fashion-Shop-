@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { animate, state, style, transition, trigger, keyframes } from '@angular/animations';
+
 @Component({
   selector: 'app-image-slide',
   templateUrl: './image-slide.component.html',
@@ -24,9 +25,9 @@ import { animate, state, style, transition, trigger, keyframes } from '@angular/
     ])
   ]
 })
+
 export class ImageSlideComponent implements OnInit {
 
-  
   public imageUrls: any[];
   public state = 'void';
   public disableSliderButtons: boolean = false;
