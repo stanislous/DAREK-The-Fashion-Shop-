@@ -82,3 +82,8 @@
     display: block;
     margin: 0 auto;
 }
+
+.carousel-inner img {
+  width: 50%;
+  height: 50%;
+}
